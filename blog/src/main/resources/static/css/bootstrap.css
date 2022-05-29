@@ -579,8 +579,8 @@ pre code {
 
 .container {
     width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 0;
+    padding-left: 0;
     margin-right: auto;
     margin-left: auto
 }
@@ -9136,7 +9136,8 @@ button.bg-dark:hover {
 }
 
 .text-primary {
-    color: #007bff !important
+    text-decoration: none;
+    color: #00675b !important
 }
 
 a.text-primary:focus,
