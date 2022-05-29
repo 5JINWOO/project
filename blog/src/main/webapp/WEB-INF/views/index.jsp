@@ -160,41 +160,9 @@
       <div class="col-md-6 p-4 ps-md-0">
          <h5 class="mt-0">NEW 게시판 OPEN !!!</h5>
          <p>자신의 일상및 생각을 공유하세요~</p>
-         <a href="/board/saveForm" class="text-primary stretched-link">게시판 글 작성하러가기 </a>
+         <a href="/board/list" class="text-primary stretched-link">게시판 글 작성하러가기 </a>
       </div>
    </div>
-   <c:forEach var="board" items="${boards.content}">
-      <div class="card m-2">
-         <div class="card-body">
-            <h4 class="card-title">${board.title}</h4>제목 내용 상세보기가기
-            <a href="/board/${board.id}" class="btn btn-success">상세보기</a>
-         </div>
-      </div>
-   </c:forEach>
-   <ul class="pagination justify-content-center">
-      <c:choose>
-         <c:when test="${boards.first}">
-            <li class="page-item disabled"><a class="page-link link-page"
-               href="?page=${boards.number-1}">Previous</a></li>
-         </c:when>
-         <c:otherwise>
-            <li class="page-item"><a class="page-link link-page"
-               href="?page=${boards.number-1}">Previous</a></li>
-         </c:otherwise>
-      </c:choose>
-      <c:choose>
-         <c:when test="${boards.last}">
-            <li class="page-item disabled"><a class="page-link link-page"
-               href="?page=${boards.number+1}">Next</a></li>
-         </c:when>
-         <c:otherwise>
-            <li class="page-item"><a class="page-link link-page"
-               href="?page=${boards.number+1}">Next</a></li>
-         </c:otherwise>
-      </c:choose>
-   </ul>
 </div>
-
-<br>
 <script type="text/javascript" src="/js/board.js"></script>
 <%@ include file="layout/footer.jsp"%>
