@@ -92,7 +92,6 @@ line-height: 1.6;
     margin:0px auto;
     padding: 0;
     height:600px;
-    background: url('/image/community.jpg');
     background-repeat: no-repeat;
     background-size:cover;
     background-position:center;
@@ -109,14 +108,14 @@ c
     font-size: 3em;
     width:400px;
     height:400px;
-    color:white;
-    font-family: 'Do Hyeon', 'sans-serif';
+    color:black;
+    font-family: 'GmarketSansBold', 'sans-serif';
 }
 .sec1_info {
-    font-size: 1.5em;
+    font-size: 32px;
     width:350px;
-    color:white;
-    font-family: 'Do Hyeon', 'sans-serif';
+    color:black;
+    font-family: ''SUIT-SemiBold'', 'sans-serif';
 }
 .sec1_info a {
     border: 1px solid white;
