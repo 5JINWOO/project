@@ -16,8 +16,7 @@
 			<div class="form-group">
                 <label for="nickname">NICKNAME</label>
                 <input type="text"
-                    class="form-control" placeholder="Enter your nickname." id="nickname"
-                    name="nickname">
+                    class="form-control" placeholder="Enter your nickname." id="nickname" >
             </div>
 			<div class="form-group">
 				<label for="password" id="red">※ PASSWORD</label> <input type="password"
@@ -27,7 +26,7 @@
 			<div class="form-group">
 				<label for="password" id="red">※ PASSWORD CONFIRM</label> <input type="password"
 					class="form-control" placeholder="Please enter your password once more." id="password2"
-					name="password2">
+					>
 			</div>
 			<div class="form-group">
                 <label for="email" id="red">※ EMAIL</label>
@@ -39,7 +38,7 @@
                 <label for="mobile">MOBILE</label>
                 <input type="number"
                     class="form-control" placeholder="Enter your mobile." id="mobile"
-                    name="mobile">
+                   >
             </div>
 		</form>
 		<div class="form-grouping-save">
