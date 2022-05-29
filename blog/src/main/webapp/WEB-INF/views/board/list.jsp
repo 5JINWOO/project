@@ -8,7 +8,7 @@
 		<form class="row g-3 d-fex justify-content-end">
 			<div class="col-auto">
 				<input type="text" class="form-control" name="searchText"
-					value="${param.searchText}" placeholder="Title">
+					value="${param.searchText}" placeholder="Title or Content">
 			</div>
 			<div class="col-auto">
 				<button type="submit" id="search-btn" class="btn btn-primary mb-3">SEARCH</button>
