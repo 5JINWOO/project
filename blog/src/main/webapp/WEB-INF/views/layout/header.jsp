@@ -71,4 +71,3 @@
             <i class="fa-brands fa-twitter"></i>
         </div>
 	</nav>
-	<br>
