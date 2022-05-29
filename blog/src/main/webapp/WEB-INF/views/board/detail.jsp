@@ -23,6 +23,7 @@
 			<div class="profile_info">
 				글 번호 : <span id="id"><i>${board.id }</i></span>
 				&nbsp;&nbsp;&nbsp;&nbsp; 작성자 : <span><i>${board.users.username }</i></span>
+				&nbsp;&nbsp;&nbsp;&nbsp; 조회수 : <span><i>${board.count }</i></span>
 			</div>
 		</div>
 

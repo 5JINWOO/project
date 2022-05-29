@@ -36,11 +36,7 @@ public class BoardService {
 	public Page<Boards> 게시글목록보기(Pageable page, String searchText) {
 	 	return boardRepository.findByTitleOrContent(searchText, page);
 	 }
-//	@Transactional(readOnly=true)
-//	public Page<Boards> 글목록(Pageable pageable){
-//		return boardRepository.findAll(pageable);
-//	}
-//	
+
 	@Transactional(readOnly=true)
 	public Boards 글상세보기(int id) {
 		return boardRepository.findById(id)
@@ -66,8 +62,7 @@ public class BoardService {
 		});
 		board.setTitle(requestBoard.getTitle());
 		board.setContent(requestBoard.getContent());
-		//해당함수로 종료시 트랜젝션이 종료된다.
-		//이때 더티체킹 - 자동업데이트가 된다.(commit)
+
 	}
 	@Transactional
 	public void 댓글쓰기(ReplySaveRequestDto replySaveRequestDto) {
@@ -89,18 +84,9 @@ public class BoardService {
 		replyRepository.save(reply);
 		
 	}
-	
-	
-	
-//	@Transactional // dto 쓰지않고 처리
-//	public void 댓글쓰기(Users user,int boardId, Reply requestReply) {
-//		Boards board = boardRepository.findById(boardId).orElseThrow(() -> {
-//			return new IllegalArgumentException("글 찾기 실패: 아이디를 찾을 수 없습니다.");
-//		});
-//		
-//		requestReply.setUser(user);
-//		requestReply.setBoards(board);
-//		
-//		replyRepository.save(requestReply);
-//	}
+
+	@Transactional
+	public int updateCount(int id) {
+		return boardRepository.updateCount(id);
+	}
 }
