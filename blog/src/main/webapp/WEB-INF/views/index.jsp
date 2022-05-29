@@ -154,10 +154,10 @@
 <div class="container">
 
    <div class="row g-0  position-relative">
-      <div class="col-md-6 mb-md-0 p-md-4">
+      <div class="col-md-6">
          <img src="https://www.creativefabrica.com/wp-content/uploads/2020/09/23/WELCOME-Graphics-5632158-1-1-580x386.jpg" class="w-100" alt="welcome">
       </div>
-      <div class="col-md-6 p-4 ps-md-0">
+      <div class="col-md-6" id="board-link">
          <h5 class="mt-0">NEW 게시판 OPEN !!!</h5>
          <p>자신의 일상및 생각을 공유하세요~</p>
          <a href="/board/list" class="text-primary stretched-link">게시판 글 작성하러가기 </a>
