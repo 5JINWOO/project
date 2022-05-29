@@ -12,6 +12,7 @@
 	src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
 <script
 	src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://kit.fontawesome.com/6efa8ca364.js" crossorigin="anonymous"></script>
 <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.css" rel="stylesheet">
 <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.js"></script>
 <link rel="stylesheet" type="text/css" href="/css/style.css">
@@ -25,16 +26,21 @@
 </sec:authorize>
 </head>
 <body>
-	<nav class="navbar navbar-expand-md bg-dark navbar-dark">
-		<a class="navbar-brand" href="/">Home</a>
+	<nav class="navbar navbar-expand-md hd-navbar">
+	    <div class = "navbar_logo">
+            <i class="fa-solid fa-hands-clapping"></i>
+            <a href="/">twohand</a>
+        </div>
 		<button class="navbar-toggler" type="button" data-toggle="collapse"
 			data-target="#collapsibleNavbar">
 			<span class="navbar-toggler-icon"></span>
 		</button>
-		<div class="collapse navbar-collapse" id="collapsibleNavbar">
+		<div class="collapse navbar-collapse navbar_menu" id="collapsibleNavbar">
 			<c:choose>
 				<c:when test="${empty principal }">
 					<ul class="navbar-nav">
+					    <li class="nav-item"><a class="nav-link"
+                            href="/">Home</a></li>
 						<li class="nav-item"><a class="nav-link"
 							href="/auth/loginForm">로그인</a></li>
 						<li class="nav-item"><a class="nav-link"
@@ -43,6 +49,8 @@
 				</c:when>
 				<c:otherwise>
 					<ul class="navbar-nav">
+					    <li class="nav-item"><a class="nav-link" href="/">Home</a>
+					    </li>
 						<li class="nav-item"><a class="nav-link" href="/board/list">게시판</a>
 						</li>
 						<li class="nav-item"><a class="nav-link" href="/user/updateForm">회원정보</a>
@@ -53,5 +61,10 @@
 				</c:otherwise>
 			</c:choose>
 		</div>
+		<div class="nav_end">
+            <i class="fa-brands fa-instagram-square"></i>
+            <i class="fa-brands fa-facebook-square"></i>
+            <i class="fa-brands fa-twitter"></i>
+        </div>
 	</nav>
 	<br>
