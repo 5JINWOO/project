@@ -44,7 +44,7 @@ let index = {
 			//응답의 결과가 문자열이 아닌 json으로 변환
 		}).done(function(resp) {
 			alert("글쓰기가 완료되었습니다.");
-			location.href = "/";
+			location.href = "/board/list";
 			//응답이 정상
 		}).fail(function(error) {
 			alert(JSON.stringify(error));
