@@ -47,7 +47,6 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 			.authenticated()//인증이 필요
 		.and()
 			.formLogin()
-<<<<<<< HEAD
 			.loginPage("/auth/loginForm") //사용자 정의 로그인 페이지
 			.loginProcessingUrl("/auth/loginProc")//로그인 form action url
 		//스프링 시큐리티가 해당 주소로 요청오는 로그인을 가로채서 대신 로그인
@@ -60,14 +59,6 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 				.userInfoEndpoint()
 				.userService(principalOauth2UserService);
 
-		
-=======
-			.loginPage("/auth/loginForm")
-			.loginProcessingUrl("/auth/loginProc")
-
-			.defaultSuccessUrl("/");//로그인 성공후 이동페이지
-
->>>>>>> hyosung
 	}
 	
 
