@@ -92,7 +92,6 @@ line-height: 1.6;
     margin:0px auto;
     padding: 0;
     height:600px;
-    background: url('/image/community.jpg');
     background-repeat: no-repeat;
     background-size:cover;
     background-position:center;
@@ -109,14 +108,14 @@ c
     font-size: 3em;
     width:400px;
     height:400px;
-    color:white;
-    font-family: 'Do Hyeon', 'sans-serif';
+    color:black;
+    font-family: 'GmarketSansBold', 'sans-serif';
 }
 .sec1_info {
-    font-size: 1.5em;
+    font-size: 32px;
     width:350px;
-    color:white;
-    font-family: 'Do Hyeon', 'sans-serif';
+    color:black;
+    font-family: ''SUIT-SemiBold'', 'sans-serif';
 }
 .sec1_info a {
     border: 1px solid white;
@@ -446,6 +445,79 @@ margin: 30px 0px;
 	    border: none;
 	}
 
+#btn-update:hover, #btn-login:hover, #btn-save:hover, #btn_kakaoLogin:hover {
+color: #004c40;
+}
+
+#btn-back:hover {
+color: #48a999;
+}
+
+
+
+/* board */
+th {
+font-size: 14px;
+text-align: center;
+}
+
+table {
+font-family: Arial, "Malgun Gothic", "맑은 고딕", system-ui, -apple-system,
+	AppleSDGothicNeo-Regular, Helvetica, sans-serif;
+}
+
+#list_writeBtn{
+margin: 30px 0px;
+}
+#list_searchWrap{
+margin: 20px 0px;
+}
+.board_name, .board_Date {
+width: 200px;
+}
+
+.board_title {
+width: 600px;
+}
+
+.board_detail_container {
+padding: 20px;
+border: 1px solid #e5e5e5;
+}
+
+.board_top_btnWrap {
+display: flex;
+justify-content: space-between;
+border-bottom: 1px solid #efefef;
+padding-bottom: 20px;
+}
+
+.profile_info {
+color: #666;
+font-weight: 500;
+font-size: 13px;
+}
+
+.detail_title {
+padding-top: 20px;
+padding-bottom: 30px;
+}
+
+.reply_container>.list-group>li {
+border: none;
+background-color: rgba(0, 0, 0, .00);
+}
+
+.reply_container {
+padding: 25px 0px;
+background-color: rgba(0, 0, 0, .03);
+}
+
+#reply-content {
+margin: 12px auto;
+width: 97%;
+}
+
 .reply_saveBtnCon {
 display: flex;
 justify-content: end;
@@ -464,4 +536,10 @@ margin: 0px 20px;
       font-family:'Malgun Gothic';
       color: white;
 
+}
+
+#btn-reply-save, #btn-reply-delete {
+	    color: white;
+	    background : #00796b;
+	    border: none;
 }
