@@ -177,12 +177,12 @@ margin: 30px 0px;
 
 /* loginForm, joinForm, updateForm */
 
-.form-grouping {
-	margin:20px 0;
+    .form-grouping {
+	    margin:20px 0;
 	}
 	
 	.form-grouping-login, .form-grouping-save {
-	margin-top: 60px;
+	    margin-top: 60px;
 	}
 	
 	.login_wrap, .join_wrap, .user_update {
@@ -195,68 +195,95 @@ margin: 30px 0px;
 	}
 	
 	.login_wrap > h2, .join_wrap > h2, .user_update > h2 {
-	margin-bottom: 50px;
-	text-align: center;
-	font-family: 'GmarketSansBold';
-	font-weight: 600;
-	color: #00796b;
+        margin-bottom: 50px;
+        text-align: center;
+        font-family: 'GmarketSansBold';
+        font-weight: 600;
+        color: #00796b;
 	}
 	
 	.form-grouping > h5, .form-grouping > h6 {
-	text-align: center;
-	font-family: 'GmarketSansBold';
+        text-align: center;
+        font-family: 'GmarketSansBold';
 	}
 	
 	.form-grouping > h5 > a {
-	color: #1b0000;
-	text-decoration: none;
+        color: #00796b;
+        text-decoration: none;
 	}
 	
 	.form-grouping > h6 > a {
-			color: #1b0000;
-			text-decoration: none;
+        color: #00796b;
+        text-decoration: none;
 	}
 	
 	.form-grouping > h5 > a:hover, .form-grouping > h6 > a:hover {
-			color: #4ebaaa;
+        color: #4ebaaa;
 	}
 	
 	.form-group > label {
-			margin: 10px 0;
-			font-size: 15px;
-			font-weight: lighter;
+        margin: 10px 0;
+        font-size: 15px;
+        font-weight: lighter;
 	}
 	
 	.form-group > #red {
-			color: #8e0000;
+        color: #8e0000;
 	}
 	
-	#btn_kakaoLogin {
+	#btn-kakaoLogin {
 		height: 38px;
 		margin: 10px 0px;
 		width: 100%;
 		border: none;
-		color: black;
+		color: #373737;
 		background: #ffe621;
 		}
+
+	#btn-naverLogin {
+        height: 38px;
+        margin: 10px 0px;
+        width: 100%;
+        border: none;
+        color: #373737;
+        background: #1EC800;
+        }
+
+    #btn-googleLogin {
+        height: 38px;
+        margin: 10px 0px;
+        width: 100%;
+        border: none;
+        color: #616161;
+        background: white;
+        }
+
+    #btn-facebookLogin {
+        height: 38px;
+        margin: 10px 0px;
+        width: 100%;
+        border: none;
+        color: #616161;
+        background: #eceff1;
+        }
 	
 	#btn-save {
-			height: 38px;
+        height: 38px;
 		margin: 10px 0px;
 		width: 100%;
 		border: none;
-		background: rgb(169,208,204);
-			background: linear-gradient(90deg, rgba(169,208,204,1) 76%, rgba(255,255,255,1) 100%);
-	}
+		background: rgb(255,255,255);
+        background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(172,204,165,1) 15%, rgba(162,203,151,1) 50%, rgba(170,213,171,1) 91%, rgba(255,255,255,1) 100%);
+	    }
 	
 	#btn-login {
-			height: 38px;
-			margin: 10px 0px;
-			width: 100%;
-			border: none;
-			background: rgb(169,208,204);
-			background: linear-gradient(90deg, rgba(169,208,204,1) 76%, rgba(255,255,255,1) 100%);
-	}
+        height: 38px;
+        margin: 10px 0px;
+        width: 100%;
+        border: none;
+        background: rgb(255,255,255);
+        background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(172,204,165,1) 15%, rgba(162,203,151,1) 50%, rgba(170,213,171,1) 91%, rgba(255,255,255,1) 100%);
+	    }
 	
 	#userUpdate_btn_wrap {
 		display: flex;
@@ -265,34 +292,31 @@ margin: 30px 0px;
 	}
 	
 	#btn-update, #btn-back {
-			width: 40%;
-			height: 38px;
-		margin: 0px 10px;
-		padding: 0 60px;
-		color: white;
-		border: none;
-		background: rgb(169,208,204);
-			background: linear-gradient(90deg, rgba(169,208,204,1) 76%, rgba(255,255,255,1) 100%);
-			}
+        width: 50%;
+        height: 38px;
+        margin: 0px 10px;
+        padding: 0 60px;
+        color: white;
+        border: none;
+        background: rgb(255,255,255);
+        background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(172,204,165,1) 15%, rgba(162,203,151,1) 50%, rgba(170,213,171,1) 91%, rgba(255,255,255,1) 100%);
+		}
 	
-	#btn-update:hover, #btn-save:hover, #btn_kakaoLogin:hover {
-	color: #004c40;
-	}
-	
-	#btn-login:hover {
-	background: rgb(135,167,164);
-	background: linear-gradient(90deg, rgba(135,167,164,1) 76%, rgba(255,255,255,1) 100%);
-	}
-	
-	#btn-back:hover {
-	color: #48a999;
-	}
+    #btn-login:hover, #btn-update:hover, #btn-save:hover {
+        background: rgb(255,255,255);
+        background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(125,148,120,1) 15%, rgba(118,149,110,1) 50%, rgba(125,162,125,1) 91%, rgba(255,255,255,1) 100%);
+        color: #004c40;
+    }
+
+    #btn-back:hover {
+        color: #48a999;
+    }
 	
 	
 	
 	/* list,  */
 	
-	.post-wrap >h2, #list_searchWrap >h2 {
+	.post-wrap >h2, #list_searchWrap >h2, .postUpdate-wrap > h2 {
 			margin: 50px 20px;
 			font-family: 'GmarketSansBold';
 			font-weight: 600;
@@ -325,49 +349,37 @@ margin: 30px 0px;
 	color : #00796b;
 	}
 	
-	#post-btn {
-	padding: 5px 20px;
-	border: none;
-	font-family: 'SUIT-SemiBold';
-	background: rgb(169,208,204);
-	background: linear-gradient(90deg, rgba(169,208,204,1) 76%, rgba(255,255,255,1) 100%);
-	}
-	
-	#search-btn {
+	#search-btn, #post-btn, #btn-detailBack {
 	padding: 5px 20px;
 	border: none;
 	font-family: 'SUIT-SemiBold';
 	background-color: #b2dfdb;
 	}
+
+	#btn-detailRevise {
+	background: white;
+	color:#6d4c41;
+	border: 1px solid #6d4c41;
+	}
+
 	
 	ul > li > .page-link {
 	background: #9ccc65;
 	
 	}
-	
-	#post-btn:hover {
-	background: rgb(135,167,164);
-	background: linear-gradient(90deg, rgba(135,167,164,1) 76%, rgba(255,255,255,1) 100%);
-	color: black;
-	}
-	
-	#search-btn:hover {
+
+	#search-btn:hover, #post-btn:hover {
 	color:black;
-	background:#82ada9;
+	background: #82ada9;
+	}
+
+	#btn-detailRevise:hover {
+	color: white;
+	background: #6d4c41;
 	}
 	
 	ul > li > .page-link:hover {
 	color:white;
-	}
-	
-	#btn-savePost {
-			text-align: center;
-			height: 38px;
-		margin: 50px 0px;
-		width: 50%;
-		border: none;
-		background: rgb(169,208,204);
-			background: linear-gradient(90deg, rgba(169,208,204,1) 76%, rgba(255,255,255,1) 100%);
 	}
 	
 	#list_writeBtn{
@@ -427,7 +439,6 @@ margin: 30px 0px;
 		justify-content: end;
 		margin: 0px 20px;
 	}
-
 
 #btn-update:hover, #btn-login:hover, #btn-save:hover, #btn_kakaoLogin:hover {
 color: #004c40;
@@ -520,4 +531,10 @@ margin: 0px 20px;
       font-family:'Malgun Gothic';
       color: white;
 
+}
+
+	#btn-reply-save, #btn-reply-delete {
+	    color: white;
+	    background : #00796b;
+	    border: none;
 }

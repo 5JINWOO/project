@@ -1,19 +1,17 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%@ include file="../layout/header.jsp"%>
+
 <div class="container">
-
-
 	<div class="board_detail_container">
-
 		<div class="board_top_btnWrap">
-			<button class="btn btn-outline-secondary btn-sm"
-				onclick="history.back()">돌아가기</button>
+			<button class="btn btn-outline-secondary btn-sm" id="btn-detailBack"
+				onclick="history.back()">BACK</button>
 			<div>
 				<c:if test="${board.users.id==principal.user.id }">
-					<button id="btn-delete" class="btn btn-outline-danger btn-sm">삭제</button>
-					<a href="/board/${board.id }/updateForm"
-						class="btn btn-outline-warning btn-sm">수정</a>
+					<button id="btn-delete" class="btn btn-outline-danger btn-sm">DELETE</button>
+					<a href="/board/${board.id }/updateForm" id="btn-detailRevise"
+						class="btn btn-outline-warning btn-sm">REVISE</a>
 				</c:if>
 			</div>
 		</div>
@@ -21,16 +19,15 @@
 		<div class="detail_title">
 			<h3>${board.title }</h3>
 			<div class="profile_info">
-				글 번호 : <span id="id"><i>${board.id }</i></span>
-				&nbsp;&nbsp;&nbsp;&nbsp; 작성자 : <span><i>${board.users.username }</i></span>
-				&nbsp;&nbsp;&nbsp;&nbsp; 조회수 : <span><i>${board.count }</i></span>
+				No. <span id="id"><i>${board.id }</i></span>
+				&nbsp;&nbsp;&nbsp;&nbsp; Writer : <span><i>${board.users.username }</i></span>
+				&nbsp;&nbsp;&nbsp;&nbsp; views : <span><i>${board.count }</i></span>
 			</div>
 		</div>
 
 		<div>
 			<div>${board.content }</div>
 		</div>
-
 
 		<div class="reply_container">
 			<ul id="reply--box" class="list-group">
@@ -42,16 +39,16 @@
 								<span id="replyId">
 									${reply.id }
 								</span>
-								작성자 :${reply.user.username } &nbsp;
+								ID :${reply.user.username } &nbsp;
 							</div>
 							<c:if test="${reply.user.id==principal.user.id }">
-								<button id="btn-reply-delete" class="btn btn-outline-danger btn-sm">삭제</button>
+								<button id="btn-reply-delete" class="btn btn-outline-danger btn-sm">Delete</button>
 							</c:if>
 						</div>
 					</li>
 				</c:forEach>
 			</ul>
-			<div >
+		    <div>
 				<form>
 					<input type="hidden" id="userId" value="${principal.user.id }" /> <input
 						type="hidden" id="boardId" value="${board.id }" />
@@ -59,7 +56,7 @@
 						<textarea id="reply-content" class="form-control" rows="3"></textarea>
 					</div>
 					<div class="reply_saveBtnCon">
-						<button type="button" id="btn-reply-save" class="btn btn-primary btn-sm">등록</button>
+						<button type="button" id="btn-reply-save" class="btn btn-primary btn-sm">SUBMIT</button>
 					</div>
 				</form>
 			</div>
