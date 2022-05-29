@@ -28,7 +28,7 @@
 					<td style="font-size: 13px; text-align: center;">${board.id }</td>
 					<td style="font-size: 15px;"> <a href="/board/${board.id }">${board.title }</a></td>
 					<td style="font-size: 13px; text-align: center;">${board.users.username }</td>
-					<td style="font-size: 13px; text-align: center;">${board.createDate }</td>
+					<td style="font-size: 13px; text-align: center;"><fmt:formatDate pattern="yyyy-MM-dd" value="${board.createDate }" /></td>
 				</tr>
 			</c:forEach>
 		</tbody>
