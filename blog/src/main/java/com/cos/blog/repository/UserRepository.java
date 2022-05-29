@@ -22,5 +22,6 @@ public interface UserRepository extends JpaRepository<Users,Integer> {
 	//select * from users where username=? AND password=?;
 	Optional<Users> findByUsername(String username); //리턴 받는타입 <Users>
 
-	
+	Users findUsersByUsername(String username);
+	Optional<Users> findByProviderAndProviderId(String provider, String providerId);
 }

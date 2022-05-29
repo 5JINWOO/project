@@ -43,7 +43,7 @@ public class Users {
 	@Column(nullable=false ,length=100, unique =true)
 	private String username;
 	
-	@Column(nullable=false ,length=100)
+	@Column(length=100)
 	private String password;
 	
 	@Column(nullable=false ,length=50)
@@ -54,7 +54,10 @@ public class Users {
 	private RoleType roles;//Enum 을 쓰는게 좋다. // 도메인을 사용해야되서.
 	//예 admin, user, manager(권한) 셋 중 하나만
 	
-	private String oauth; //kakao , google 
+	private String oauth; //kakao , google
+
+	private String provider;
+	private String providerId;
 	
 	@CreationTimestamp
 	private Timestamp createDate;

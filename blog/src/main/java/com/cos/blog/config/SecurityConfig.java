@@ -1,5 +1,6 @@
 package com.cos.blog.config;
 
+import com.cos.blog.config.oauth.PrincipalOauth2UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -18,7 +19,9 @@ import com.cos.blog.config.auth.PrincipalDetailService;
 @EnableWebSecurity //시큐리티 필터가 등록된다.(설정을 여기서)
 @EnableGlobalMethodSecurity(prePostEnabled=true)//특정주소로 접근을 하면 권한 및 인증을 미리 체크 하겠다는 의미 
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
-	
+
+	@Autowired
+	private PrincipalOauth2UserService principalOauth2UserService;
 	@Autowired
 	private PrincipalDetailService principalDetailService;
 	
@@ -47,9 +50,15 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 			.loginPage("/auth/loginForm") //사용자 정의 로그인 페이지
 			.loginProcessingUrl("/auth/loginProc")//로그인 form action url
 		//스프링 시큐리티가 해당 주소로 요청오는 로그인을 가로채서 대신 로그인
-			.defaultSuccessUrl("/");//로그인 성공후 이동페이지
+			.defaultSuccessUrl("/")//로그인 성공후 이동페이지
 		//로그인 성공 후에 요청되는 페이지
 			//.failureUrl("로그인 실패 후 요청 페이지")
+		.and()
+				.oauth2Login()
+				.loginPage("/login")
+				.userInfoEndpoint()
+				.userService(principalOauth2UserService);
+
 		
 	}
 	

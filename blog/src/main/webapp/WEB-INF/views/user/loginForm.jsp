@@ -27,6 +27,22 @@
 						<img src="image/kakao_icon.png" /> Login with Kakao Account
 						</button>
 					</a>
+					<a href="/oauth2/authorization/google" >
+                    	<img src="https://pngimage.net/wp-content/uploads/2018/06/google-login-button-png-1.png"
+                    		alt="google" width="357px" height="117px">
+                    	</a>
+                    	<br />
+                    	<a href="/oauth2/authorization/facebook">
+                    	<img src="https://pngimage.net/wp-content/uploads/2018/06/login-with-facebook-button-png-transparent-1.png"
+                    		alt="facebook" width="357px" height="117px">
+                    	</a>
+                    	<br />
+
+                    	<a href="/oauth2/authorization/naver">
+                    	<img src="https://blogfiles.pstatic.net/MjAyMDA4MDRfMzMg/MDAxNTk2NTEyOTY4MDMx.vhXHCulffijGUnvlaBR2jW4__Lkz8R3ZTaEDcTeNV2gg.Wt_HNl_zktUJUMrYGkVmqJ-PhxKv_s4A7gG1uPKMZaQg.PNG.getinthere/naver_button.png"
+                    		alt="facebook" width="357px" height="50px">
+                    	</a>
+                    <br />
 				</div>
 				<div class="form-grouping">
 				    <h5><a href="/auth/joinForm">Create an Account?</a></h5>
