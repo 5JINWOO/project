@@ -2,16 +2,20 @@
     pageEncoding="UTF-8"%>
 <%@ include file="../layout/header.jsp" %>
 <div class="container">
-	<form>
-		<input type="hidden" id="id" value="${board.id }">
-		<div class="form-group">
-			<input value="${board.title}" type="text" class="form-control" placeholder="Enter title" id="title">
-		</div>
-		<div class="form-group">
-			<textarea class="form-control summernote" rows="5" id="content">${board.content }</textarea>
-		</div>
-	</form>
-	<button id="btn-update" class="btn btn-primary">수정</button>
+    <div class="postUpdate-wrap">
+        <h2>Update your post</h2>
+        <form>
+            <input type="hidden" id="id" value="${board.id }">
+            <div class="form-group">
+                <input value="${board.title}" type="text" class="form-control" placeholder="Update your title" id="title">
+            </div>
+            <div class="form-group">
+                <textarea class="form-control summernote" rows="5" id="content">${board.content }</textarea>
+            </div>
+        </form>
+	    <button id="btn-update" class="btn btn-primary">UPDATE</button>
+	    <button id="btn-back" class="btn btn-outline-secondary btn-sm" onclick="history.back()">BACK</button>
+	</div>
 </div>
 <br>
 

@@ -14,7 +14,7 @@
                 <textarea class="form-control summernote" rows="5" id="content"></textarea>
             </div>
         </form>
-        <button id="btn-savePost" class="btn btn-primary">POST</button>
+        <button id="btn-save" class="btn btn-primary">POST</button>
 	</div>
 </div>
 <br>
