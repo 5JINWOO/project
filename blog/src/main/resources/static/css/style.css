@@ -85,8 +85,89 @@ line-height: 1.6;
     color: #ffffff;
     padding: 5px;
 }
-
 /* navbar end===================================== */
+
+/*=====================main section===================*/
+.section1{
+    margin:0px auto;
+    padding: 0;
+    height:600px;
+    background: url('/image/community.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:center;
+    background-attachment: fixed;
+c
+}
+.sec1_wrap{
+    position:absolute;
+    top:20%;
+    left:15%;
+    animation: slide 1.5s ease-out;
+}
+.sec1_slogan{
+    font-size: 3em;
+    width:400px;
+    height:400px;
+    color:white;
+    font-family: 'Do Hyeon', 'sans-serif';
+}
+.sec1_info {
+    font-size: 1.5em;
+    width:350px;
+    color:white;
+    font-family: 'Do Hyeon', 'sans-serif';
+}
+.sec1_info a {
+    border: 1px solid white;
+    border-radius: 2px;
+    padding: 5px;
+    color: white;
+    background-color: red;
+    text-decoration: none;
+}
+
+@keyframes slide{
+    from {
+        left:-200px;
+        opacity: 0;
+    }
+    to {
+        left :15%;
+        opacity: 1;
+    }
+}
+.section2{
+    font-family: '맑은고딕';
+    color:white;
+    margin:0 auto;
+    background-color:rgb(8, 179, 209);
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding-top:20px;
+}
+.sec_logo{
+    font-size: 3em;
+    width: 180px;
+    text-align: center;
+    color:white;
+    padding-right:20px;
+}
+.sec2_title2{
+    padding:10px;
+    border-top:0.5px white;
+}
+.sec2_title a {
+    border:purple solid 2px;
+    text-decoration:none;
+    padding:7px 15px;
+    margin: 5px;
+    color :rgb(245, 245, 215);
+    border-radius: 3px;
+}
+
+/* section end===================================== */
 
 /* user detail */
 .card{

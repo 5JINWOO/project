@@ -1,8 +1,36 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%@ include file="layout/header.jsp"%>
-<div class="container">
-<div class="card">
+    <section class="section1">
+            <div class="sec1_wrap">
+            <div class="sec1_slogan">No matter how you're feeling, <br>a little dog gonna love you.</div>
+            <div class="sec1_info">댕댕이들의 행복한 일상을 공유하세요!<br>
+                <a href = "imgNotice.html">자세히보기</a>
+            </div>
+            </div>
+        </section>
+
+        <!-- main section2 시작 !-->
+
+        <section class="section2">
+            <div class = "sec_logo">
+            <i class="fa-solid fa-dog"></i>
+            <h2>DOGDOG</h2>
+            </div>
+            <div class="sec2_title">
+                <h2>똑똑회원의 특별한 혜택</h2>
+                <p><strong>똑똑의 회원이세요?</strong> 로그인을 통해 내주변 정보를 확인해보세요.</p>
+                <p><strong>똑똑의 회원이 아니세요?</strong> 가입을 통해 정보를 입력해보세요.</p>
+                <a href = "login.html">로그인</a>
+                <a href = "signUp.html">회원가입</a>
+                <div class="sec2_title2">
+                    <p>회원 가입 후 내주변 애견샵, 애견병원, 애견동반 식당을 찾아보시고 쿠폰 받아가세요!</p>
+                </div>
+            </div>
+
+        </section>
+
+  <div class="card">
 
 
   <div class="card-header">
@@ -38,7 +66,7 @@
     </blockquote>
   </div>
 </div>
-</div>
+
 
 <br>
 <script type="text/javascript" src="/js/board.js"></script>
