@@ -83,86 +83,34 @@
     	<section class="exclusive-deal-area">
     		<div class="container-fluid">
     			<div class="row justify-content-center align-items-center">
-    				<div class="col-lg-6 no-padding exclusive-left">
+    				<div class="col-lg-6 no-padding exclusive-left" style="background:rgba(151,221,208,1); ">
     					<div class="row clock_sec clockdiv" id="clockdiv">
     						<div class="col-lg-12">
-    							<h1>Exclusive Hot Deal Ends Soon!</h1>
-    							<p>Who are in extremely love with eco friendly system.</p>
+    							<h1>New ITEMS HERE!</h1>
+    							<p>Share your items with Twohand community.</p>
     						</div>
     						<div class="col-lg-12">
-    							<div class="row clock-wrap">
-    								<div class="col clockinner1 clockinner">
-    									<h1 class="days">150</h1>
-    									<span class="smalltext">Days</span>
-    								</div>
-    								<div class="col clockinner clockinner1">
-    									<h1 class="hours">23</h1>
-    									<span class="smalltext">Hours</span>
-    								</div>
-    								<div class="col clockinner clockinner1">
-    									<h1 class="minutes">47</h1>
-    									<span class="smalltext">Mins</span>
-    								</div>
-    								<div class="col clockinner clockinner1">
-    									<h1 class="seconds">59</h1>
-    									<span class="smalltext">Secs</span>
-    								</div>
-    							</div>
+
     						</div>
     					</div>
-    					<a href="" class="primary-btn">Shop Now</a>
+    					<a href="/board/list" class="primary-btn" style="text-decoration:none;">Go to sell your items!</a>
     				</div>
     				<div class="col-lg-6 no-padding exclusive-right">
     					<div class="active-exclusive-product-slider">
-    						<!-- single exclusive carousel -->
+
     						<div class="single-exclusive-slider">
     							<img class="img-fluid" src="../../image/crane.gif" alt="">
     							<div class="product-details">
     								<h3>SHOP HERE!</h3>
     							</div>
     						</div>
-    						<!-- single exclusive carousel -->
 
     					</div>
     				</div>
     			</div>
     		</div>
     	</section>
-    	<!-- End exclusive deal Area -->
 
-    	<!-- Start brand Area -->
-    	<section class="brand-area">
-    		<div class="container">
-    			<div class="row">
-    				<a class="col single-img" href="#">
-    					<img class="img-fluid d-block mx-auto" href="../../image/bank.png" alt="">
-    				</a>
-    				<a class="col single-img" href="#">
-    					<img class="img-fluid d-block mx-auto" href="../../image/globe.png" alt="">
-    				</a>
-    				<a class="col single-img" href="#">
-    					<img class="img-fluid d-block mx-auto" href="../../image/users.png" alt="">
-    				</a>
-    				<a class="col single-img" href="#">
-    					<img class="img-fluid d-block mx-auto" href="../../image/phone-call.png" alt="">
-    				</a>
-    			</div>
-    		</div>
-    	</section>
 
-    	<!-- End brand Area -->
-<div class="container">
-
-   <div class="row g-0  position-relative">
-      <div class="col-md-6">
-         <img src="https://www.creativefabrica.com/wp-content/uploads/2020/09/23/WELCOME-Graphics-5632158-1-1-580x386.jpg" class="w-100" alt="welcome">
-      </div>
-      <div class="col-md-6" id="board-link">
-         <h5 class="mt-0">NEW 게시판 OPEN !!!</h5>
-         <p>자신의 일상및 생각을 공유하세요~</p>
-         <a href="/board/list" class="text-primary stretched-link">게시판 글 작성하러가기 </a>
-      </div>
-   </div>
-</div>
 <script type="text/javascript" src="/js/board.js"></script>
 <%@ include file="layout/footer.jsp"%>

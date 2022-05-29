@@ -4,6 +4,7 @@
 <title>myblog</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" type="image/x-icon" href="../../image/favicon.png" />
 <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
 <link rel="stylesheet"
 	href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
@@ -33,7 +34,7 @@
 	<nav class="navbar navbar-expand-md hd-navbar">
 	    <div class = "navbar_logo">
             <i class="fa-solid fa-hands-clapping"></i>
-            <a href="/">twohand</a>
+            <a href="/"> TWOHAND</a>
         </div>
 		<button class="navbar-toggler" type="button" data-toggle="collapse"
 			data-target="#collapsibleNavbar">
@@ -44,30 +45,26 @@
 				<c:when test="${empty principal }">
 					<ul class="navbar-nav" id="na">
 					    <li class="nav-item"><a class="nav-link"
-                            href="/">Home</a></li>
+                            href="/">HOME</a></li>
 						<li class="nav-item"><a class="nav-link"
-							href="/auth/loginForm">로그인</a></li>
+							href="/auth/loginForm">LOGIN</a></li>
 						<li class="nav-item"><a class="nav-link"
-							href="/auth/joinForm">회원가입</a></li>
+							href="/auth/joinForm">REGISTER</a></li>
 					</ul>
 				</c:when>
 				<c:otherwise>
 					<ul class="navbar-nav">
-					    <li class="nav-item"><a class="nav-link" href="/">Home</a>
+					    <li class="nav-item"><a class="nav-link" href="/">HOME</a>
 					    </li>
-						<li class="nav-item"><a class="nav-link" href="/board/list">게시판</a>
+						<li class="nav-item"><a class="nav-link" href="/board/list">Market</a>
 						</li>
-						<li class="nav-item"><a class="nav-link" href="/user/updateForm">회원정보</a>
+						<li class="nav-item"><a class="nav-link" href="/user/updateForm">My account</a>
 						</li>
-						<li class="nav-item"><a class="nav-link" href="/logout">로그아웃</a>
+						<li class="nav-item"><a class="nav-link" href="/logout">Logout</a>
 						</li>
 					</ul>
 				</c:otherwise>
 			</c:choose>
 		</div>
-		<div class="nav_end">
-            <i class="fa-brands fa-instagram-square"></i>
-            <i class="fa-brands fa-facebook-square"></i>
-            <i class="fa-brands fa-twitter"></i>
-        </div>
+
 	</nav>

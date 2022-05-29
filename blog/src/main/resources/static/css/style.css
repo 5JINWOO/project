@@ -15,8 +15,6 @@
 body{
     margin:0;
     padding:0;
-    font-family: 'SUIT-SemiBold';
-
 }
 
 div {
@@ -27,7 +25,7 @@ line-height: 1.6;
 .hd-navbar {
     display: flex;``
     align-items: center;
-    background-color: #00796b;
+    background-color: white;
     padding: 8px 12px;
     margin 0 30px;
     position: sticky;
@@ -42,9 +40,17 @@ line-height: 1.6;
 
 /* Nav style */
 .navbar_logo a, i{
-   padding-right: 8px;
-   color: #F9F871;
+   text-decoration: none;
+   padding-right: 5px;
+   color: #004d40;
+   font-family: 'GmarketSansBold';
 }
+
+.navbar_logo a:hover {
+    text-decoration: none;
+    color:;
+}
+
 .navbar_logo {
     display: flex;
     flex-direction: row;
@@ -58,13 +64,28 @@ line-height: 1.6;
     padding:8px;
 }
 .navbar_menu a {
-    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    color: white;
+    font-family: 'GmarketSansBold';
+    border: none;
+    border-radius: 50%;
+    background: #00675b;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.05), 0 6px 6px rgba(0, 0, 0, 0.1);
+    height: 50px;
+    width: 140px;
+    cursor: pointer; /* 마우스 포인터를 올렸을 때 손가락으로 바뀜 */
+    transition: box-shadow 0.1s linear;
 }
 
 .navbar_menu a:hover{
-    background-color:#F9F871;
-    color: #00796b;
-    border-radius: 4px;
+    text-align: center;
+    padding: 10px;
+    height: 50px;
+    width: 140px;
+    color: white;
+    border-radius: 50%;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2), 0 6px 4px rgba(0, 0, 0, 0.2);
 }
 
 .navbar_menu {
@@ -73,18 +94,7 @@ line-height: 1.6;
     align-items: center;
     justify-content: space-evenly;
 }
-.nav_end {
-    list-style: none;
-    padding: 8px 12px;
-    display:flex;
-    font-size: 24px;
-    align-items: center;
-    justify-content: center;
-}
-.nav_end i{
-    color: #ffffff;
-    padding: 5px;
-}
+
 /* navbar end===================================== */
 
 /*=====================main section===================*/
@@ -272,8 +282,8 @@ margin: 30px 0px;
 		width: 100%;
 		border: none;
 		background: rgb(255,255,255);
-        background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(172,204,165,1) 15%, rgba(162,203,151,1) 50%, rgba(170,213,171,1) 91%, rgba(255,255,255,1) 100%);
-	    }
+        background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(41,128,89,1) 20%, rgba(42,136,96,1) 50%, rgba(52,177,121,1) 80%, rgba(255,255,255,1) 100%);
+        }
 	
 	#btn-login {
         height: 38px;
@@ -281,8 +291,8 @@ margin: 30px 0px;
         width: 100%;
         border: none;
         background: rgb(255,255,255);
-        background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(172,204,165,1) 15%, rgba(162,203,151,1) 50%, rgba(170,213,171,1) 91%, rgba(255,255,255,1) 100%);
-	    }
+        background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(41,128,89,1) 20%, rgba(42,136,96,1) 50%, rgba(52,177,121,1) 80%, rgba(255,255,255,1) 100%);
+        }
 	
 	#userUpdate_btn_wrap {
 		display: flex;
@@ -298,12 +308,12 @@ margin: 30px 0px;
         color: white;
         border: none;
         background: rgb(255,255,255);
-        background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(172,204,165,1) 15%, rgba(162,203,151,1) 50%, rgba(170,213,171,1) 91%, rgba(255,255,255,1) 100%);
-		}
+        background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(41,128,89,1) 20%, rgba(42,136,96,1) 50%, rgba(52,177,121,1) 80%, rgba(255,255,255,1) 100%);
+        }
 	
     #btn-login:hover, #btn-update:hover, #btn-save:hover {
         background: rgb(255,255,255);
-        background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(125,148,120,1) 15%, rgba(118,149,110,1) 50%, rgba(125,162,125,1) 91%, rgba(255,255,255,1) 100%);
+        background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(87,195,146,1) 20%, rgba(104,198,158,1) 50%, rgba(80,198,145,1) 80%, rgba(255,255,255,1) 100%);
         color: #004c40;
     }
 
