@@ -14,7 +14,6 @@
             </div>
         </form>
 	    <button id="btn-update" class="btn btn-primary">UPDATE</button>
-	    <button id="btn-back" class="btn btn-outline-secondary btn-sm" onclick="history.back()">BACK</button>
 	</div>
 </div>
 <br>
