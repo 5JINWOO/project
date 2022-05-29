@@ -206,178 +206,252 @@ margin: 30px 0px;
 /* loginForm, joinForm, updateForm */
 
 .form-grouping {
-margin:20px 0;
-}
-
-.form-grouping-login, .form-grouping-save {
-margin-top: 60px;
-}
-
-.login_wrap, .join_wrap, .user_update {
-padding: 40px 40px;
-margin: 20px auto;
-width: 500px;
-border: none;
-margin: 20px auto;
-border-radius: 4px;
-}
-
-.login_wrap > h2, .join_wrap > h2, .user_update > h2 {
-margin-bottom: 50px;
-text-align: center;
-font-family: 'GmarketSansBold';
-font-weight: 600;
-color: #00796b;
-}
-
-.form-grouping > h5, .form-grouping > h6 {
-text-align: center;
-font-family: 'GmarketSansBold';
-}
-
-.form-grouping > h5 > a {
-color: #1b0000;
-text-decoration: none;
-}
-
-.form-grouping > h6 > a {
+	margin:20px 0;
+	}
+	
+	.form-grouping-login, .form-grouping-save {
+	margin-top: 60px;
+	}
+	
+	.login_wrap, .join_wrap, .user_update {
+		padding: 40px 40px;
+		margin: 20px auto;
+		width: 500px;
+		border: none;
+		margin: 20px auto;
+		border-radius: 4px;
+	}
+	
+	.login_wrap > h2, .join_wrap > h2, .user_update > h2 {
+	margin-bottom: 50px;
+	text-align: center;
+	font-family: 'GmarketSansBold';
+	font-weight: 600;
+	color: #00796b;
+	}
+	
+	.form-grouping > h5, .form-grouping > h6 {
+	text-align: center;
+	font-family: 'GmarketSansBold';
+	}
+	
+	.form-grouping > h5 > a {
 	color: #1b0000;
 	text-decoration: none;
-}
-
-.form-grouping > h5 > a:hover, .form-grouping > h6 > a:hover {
-	color: #4ebaaa;
-}
-
-.form-group > label {
-	margin: 10px 0;
-	font-size: 15px;
-	font-weight: lighter;
-}
-
-.form-group > #red {
-	color: #8e0000;
-}
-
-#btn_kakaoLogin {
-height: 38px;
-margin: 10px 0px;
-width: 100%;
-border: none;
-color: black;
-background: #f2d020;
-}
-
-#btn-save {
-	height: 38px;
-margin: 10px 0px;
-width: 100%;
-border: none;
-background: rgb(169,208,204);
-	background: linear-gradient(90deg, rgba(169,208,204,1) 76%, rgba(255,255,255,1) 100%);
-}
-
-#btn-login {
-	height: 38px;
-	margin: 10px 0px;
-	width: 100%;
+	}
+	
+	.form-grouping > h6 > a {
+			color: #1b0000;
+			text-decoration: none;
+	}
+	
+	.form-grouping > h5 > a:hover, .form-grouping > h6 > a:hover {
+			color: #4ebaaa;
+	}
+	
+	.form-group > label {
+			margin: 10px 0;
+			font-size: 15px;
+			font-weight: lighter;
+	}
+	
+	.form-group > #red {
+			color: #8e0000;
+	}
+	
+	#btn_kakaoLogin {
+		height: 38px;
+		margin: 10px 0px;
+		width: 100%;
+		border: none;
+		color: black;
+		background: #ffe621;
+		}
+	
+	#btn-save {
+			height: 38px;
+		margin: 10px 0px;
+		width: 100%;
+		border: none;
+		background: rgb(169,208,204);
+			background: linear-gradient(90deg, rgba(169,208,204,1) 76%, rgba(255,255,255,1) 100%);
+	}
+	
+	#btn-login {
+			height: 38px;
+			margin: 10px 0px;
+			width: 100%;
+			border: none;
+			background: rgb(169,208,204);
+			background: linear-gradient(90deg, rgba(169,208,204,1) 76%, rgba(255,255,255,1) 100%);
+	}
+	
+	#userUpdate_btn_wrap {
+		display: flex;
+		justify-content: center;
+		margin-top: 30px;
+	}
+	
+	#btn-update, #btn-back {
+			width: 40%;
+			height: 38px;
+		margin: 0px 10px;
+		padding: 0 60px;
+		color: white;
+		border: none;
+		background: rgb(169,208,204);
+			background: linear-gradient(90deg, rgba(169,208,204,1) 76%, rgba(255,255,255,1) 100%);
+			}
+	
+	#btn-update:hover, #btn-save:hover, #btn_kakaoLogin:hover {
+	color: #004c40;
+	}
+	
+	#btn-login:hover {
+	background: rgb(135,167,164);
+	background: linear-gradient(90deg, rgba(135,167,164,1) 76%, rgba(255,255,255,1) 100%);
+	}
+	
+	#btn-back:hover {
+	color: #48a999;
+	}
+	
+	
+	
+	/* list,  */
+	
+	.post-wrap >h2, #list_searchWrap >h2 {
+			margin: 50px 20px;
+			font-family: 'GmarketSansBold';
+			font-weight: 600;
+			color: #00796b;
+	}
+	
+	th {
+		font-size: 14px;
+		text-align: center;
+	}
+	
+	table {
+		font-family: 'SUIT-SemiBold';
+	}
+	
+	table > thead {
+			text-align: center;
+			font-family: 'GmarketSansBold';
+			color: black;
+	}
+	
+	#titleCss {
+			font-family: 'SUIT-SemiBold';
+			font-weight: 600;
+			text-decoration: none;
+			color: black;
+	}
+	
+	#titleCss:hover {
+	color : #00796b;
+	}
+	
+	#post-btn {
+	padding: 5px 20px;
 	border: none;
+	font-family: 'SUIT-SemiBold';
 	background: rgb(169,208,204);
 	background: linear-gradient(90deg, rgba(169,208,204,1) 76%, rgba(255,255,255,1) 100%);
-}
-
-#userUpdate_btn_wrap {
-display: flex;
-justify-content: center;
-margin-top: 30px;
-}
-
-#btn-update, #btn-back {
-	width: 40%;
-	height: 38px;
-margin: 0px 10px;
-padding: 0 60px;
-color: white;
-border: none;
-background: rgb(169,208,204);
-	background: linear-gradient(90deg, rgba(169,208,204,1) 76%, rgba(255,255,255,1) 100%);
 	}
-
-#btn-update:hover, #btn-login:hover, #btn-save:hover, #btn_kakaoLogin:hover {
-color: #004c40;
-}
-
-#btn-back:hover {
-color: #48a999;
-}
-
-
-
-/* board */
-th {
-font-size: 14px;
-text-align: center;
-}
-
-table {
-font-family: Arial, "Malgun Gothic", "맑은 고딕", system-ui, -apple-system,
-	AppleSDGothicNeo-Regular, Helvetica, sans-serif;
-}
-
-#list_writeBtn{
-margin: 30px 0px;
-}
-#list_searchWrap{
-margin: 20px 0px;
-}
-.board_name, .board_Date {
-width: 200px;
-}
-
-.board_title {
-width: 600px;
-}
-
-.board_detail_container {
-padding: 20px;
-border: 1px solid #e5e5e5;
-}
-
-.board_top_btnWrap {
-display: flex;
-justify-content: space-between;
-border-bottom: 1px solid #efefef;
-padding-bottom: 20px;
-}
-
-.profile_info {
-color: #666;
-font-weight: 500;
-font-size: 13px;
-}
-
-.detail_title {
-padding-top: 20px;
-padding-bottom: 30px;
-}
-
-.reply_container>.list-group>li {
-border: none;
-background-color: rgba(0, 0, 0, .00);
-}
-
-.reply_container {
-padding: 25px 0px;
-background-color: rgba(0, 0, 0, .03);
-}
-
-#reply-content {
-margin: 12px auto;
-width: 97%;
-}
-
-.reply_saveBtnCon {
-display: flex;
-justify-content: end;
-margin: 0px 20px;
-}
+	
+	#search-btn {
+	padding: 5px 20px;
+	border: none;
+	font-family: 'SUIT-SemiBold';
+	background-color: #b2dfdb;
+	}
+	
+	ul > li > .page-link {
+	background: #9ccc65;
+	
+	}
+	
+	#post-btn:hover {
+	background: rgb(135,167,164);
+	background: linear-gradient(90deg, rgba(135,167,164,1) 76%, rgba(255,255,255,1) 100%);
+	color: black;
+	}
+	
+	#search-btn:hover {
+	color:black;
+	background:#82ada9;
+	}
+	
+	ul > li > .page-link:hover {
+	color:white;
+	}
+	
+	#btn-savePost {
+			text-align: center;
+			height: 38px;
+		margin: 50px 0px;
+		width: 50%;
+		border: none;
+		background: rgb(169,208,204);
+			background: linear-gradient(90deg, rgba(169,208,204,1) 76%, rgba(255,255,255,1) 100%);
+	}
+	
+	#list_writeBtn{
+		margin: 30px 0px;
+	}
+	#list_searchWrap{
+		margin: 20px 0px;
+	}
+	.board_name, .board_Date {
+		width: 200px;
+	}
+	
+	.board_title {
+		width: 600px;
+	}
+	
+	.board_detail_container {
+		padding: 20px;
+		border: 1px solid #e5e5e5;
+	}
+	
+	.board_top_btnWrap {
+		display: flex;
+		justify-content: space-between;
+		border-bottom: 1px solid #efefef;
+		padding-bottom: 20px;
+	}
+	
+	.profile_info {
+		color: #666;
+		font-weight: 500;
+		font-size: 13px;
+	}
+	
+	.detail_title {
+		padding-top: 20px;
+		padding-bottom: 30px;
+	}
+	
+	.reply_container>.list-group>li {
+		border: none;
+		background-color: rgba(0, 0, 0, .00);
+	}
+	
+	.reply_container {
+		padding: 25px 0px;
+		background-color: rgba(0, 0, 0, .03);
+	}
+	
+	#reply-content {
+		margin: 12px auto;
+		width: 97%;
+	}
+	
+	.reply_saveBtnCon {
+		display: flex;
+		justify-content: end;
+		margin: 0px 20px;
+	}
